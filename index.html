@@ -350,9 +350,14 @@
                 padding-top: 20px; /* Reset padding on mobile */
             }
         }
+        .link{
+            text-decoration: none;
+            color:black;
+        }
     </style>
 </head>
-<body>
+
+<body itemscope itemtype="https://schema.org/Person">
     <div class="cv-container">
         <!-- Left Sidebar -->
         <div class="sidebar">
@@ -360,33 +365,33 @@
                 <h2 class="section-title">CONTACT</h2>
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
-                    <div>+92 322 6344003</div>
+                    <div itemprop="telephone">+92 322 6344003</div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">✉️</div>
-                    <div>amna240402@gmail.com</div>
+                    <div itemprop="email">amna240402@gmail.com</div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">BA</div>
-                    <div>behance.net/amnanoor19</div>
+                    <div><a  class="link" href="https://behance.net/amnanoor19" itemprop="sameAs">My Behance Profile</a></div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">in</div>
-                    <div>linkedin.com/in/amna-noor-750000259/</div>
+                    <div><a  class="link" href="https://linkedin.com/in/amna-noor-750000259/" itemprop="sameAs">My Linkedin Profile</a></div>
                 </div>
             </div>
 
             <div class="section">
                 <h2 class="section-title">ACHIEVMENTS</h2>
-                <div class="achievement-item">
+                <div class="achievement-item" itemprop="award">
                     <div class="achievement-bullet">●</div>
                     <div>FYP Poster Design Winner</div>
                 </div>
-                <div class="achievement-item">
+                <div class="achievement-item" itemprop="award">
                     <div class="achievement-bullet">●</div>
                     <div>Codex 2.0 Poster Runner-up</div>
                 </div>
-                <div class="achievement-item">
+                <div class="achievement-item" itemprop="award">
                     <div class="achievement-bullet">●</div>
                     <div>Academic Excellence (3.85 CGPA)</div>
                 </div>
@@ -394,9 +399,9 @@
 
             <div class="section">
                 <h2 class="section-title">CO-CURRICULAR</h2>
-                <div class="achievement-item">
+                <div class="achievement-item" itemprop="memberOf" itemscope itemtype="https://schema.org/Organization">
                     <div class="achievement-bullet">●</div>
-                    <div>GS, Graphics & Media Society</div>
+                    <div><span itemprop="roleName">GS</span>, <span itemprop="name">Graphics & Media Society</span></div>
                 </div>
                 <div class="achievement-item">
                     <div class="achievement-bullet">●</div>
@@ -419,19 +424,19 @@
             <div class="section">
                 <h2 class="section-title">INTERESTS</h2>
                 <div class="interests-container">
-                    <div class="interest-item">
+                    <div class="interest-item" itemprop="knowsAbout">
                         <div class="interest-icon">🎨</div>
                         <div>Graphic Designing</div>
                     </div>
-                    <div class="interest-item">
+                    <div class="interest-item" itemprop="knowsAbout">
                         <div class="interest-icon">🖌️</div>
                         <div>Painting & Crafts</div>
                     </div>
-                    <div class="interest-item">
+                    <div class="interest-item" itemprop="knowsAbout">
                         <div class="interest-icon">📝</div>
                         <div>Content Creation</div>
                     </div>
-                    <div class="interest-item">
+                    <div class="interest-item" itemprop="knowsAbout">
                         <div class="interest-icon">📷</div>
                         <div>Photography</div>
                     </div>
@@ -442,22 +447,22 @@
                 <h2 class="section-title">LANGUAGES</h2>
                 <div class="language-item">
                     <div class="language-bullet">●</div>
-                    <div class="language-name">Urdu</div>
+                    <div class="language-name" itemprop="knowsLanguage">Urdu</div>
                     <div class="language-level"> - Native Language</div>
                 </div>
                 <div class="language-item">
                     <div class="language-bullet">●</div>
-                    <div class="language-name">English</div>
+                    <div class="language-name" itemprop="knowsLanguage">English</div>
                     <div class="language-level"> - Proficient</div>
                 </div>
                 <div class="language-item">
                     <div class="language-bullet">●</div>
-                    <div class="language-name">Punjabi</div>
+                    <div class="language-name" itemprop="knowsLanguage">Punjabi</div>
                     <div class="language-level"> - Intermediate</div>
                 </div>
                 <div class="language-item">
                     <div class="language-bullet">●</div>
-                    <div class="language-name">German</div>
+                    <div class="language-name" itemprop="knowsLanguage">German</div>
                     <div class="language-level"> - Basic</div>
                 </div>
             </div>
@@ -467,13 +472,13 @@
         <div class="main-content">
             <div class="header">
                 <div class="profile-img-container">
-                    <img src="image.png" alt="Amna Noor" class="profile-img">
+                    <img src="image.png" alt="Amna Noor" class="profile-img" itemprop="image">
                 </div>
                 <div class="name-title">
-                    <h1 class="name"><span>AMNA</span> <span>NOOR</span></h1>
-                    <h2 class="title">BACHELOR OF COMPUTER SCIENCE</h2>
+                    <h1 class="name" itemprop="name"><span>AMNA</span> <span>NOOR</span></h1>
+                    <h2 class="title" itemprop="jobTitle">BACHELOR OF COMPUTER SCIENCE</h2>
                     <div class="header-separator"></div>
-                    <p class="bio">
+                    <p class="bio" itemprop="description">
                         Skilled in Graphic Design and UI/UX, with a strong foundation in Computer Science (GPA: 3.85). Known for creativity and detail-oriented approach, crafting intuitive and impactful user experiences.
                     </p>
                 </div>
@@ -482,24 +487,29 @@
             <div class="section">
                 <h2 class="section-title">EDUCATION</h2>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <h3 class="timeline-title">University of Sargodha</h3>
-                        <p class="timeline-date">2021-2025</p>
-                        <p class="timeline-description">Bachelor of Computer Science</p>
+                    <div class="timeline-item" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <h3 class="timeline-title" itemprop="name">University of Sargodha</h3>
+                        <p class="timeline-date">
+                            <span itemprop="foundingDate">2021</span>-<span itemprop="dissolutionDate">2025</span>
+                        </p>
+                        <p class="timeline-description" itemprop="educationalCredentialAwarded">Bachelor of Computer Science</p>
                         <span class="timeline-score">3.85 CGPA</span>
                     </div>
-                    <div class="timeline-item">
-                        <h3 class="timeline-title">Punjab College for Women Sargodha</h3>
-                        <p class="timeline-date">2019-2021</p>
-                   
-                        <p class="timeline-description">Intermediate in Pre-Medical</p>
+                    <div class="timeline-item" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <h3 class="timeline-title" itemprop="name">Punjab College for Women Sargodha</h3>
+                        <p class="timeline-date">
+                            <span itemprop="foundingDate">2019</span>-<span itemprop="dissolutionDate">2021</span>
+                        </p>
+                        <p class="timeline-description" itemprop="educationalCredentialAwarded">Intermediate in Pre-Medical</p>
                         <span class="timeline-score">94.54 %</span>
                     </div>
                     
-                    <div class="timeline-item">
-                        <h3 class="timeline-title">Blumen Garten School</h3>
-                        <p class="timeline-date">2011-2019</p>
-                        <p class="timeline-description">Matriculation (Science)</p>
+                    <div class="timeline-item" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <h3 class="timeline-title" itemprop="name">Blumen Garten School</h3>
+                        <p class="timeline-date">
+                            <span itemprop="foundingDate">2011</span>-<span itemprop="dissolutionDate">2019</span>
+                        </p>
+                        <p class="timeline-description" itemprop="educationalCredentialAwarded">Matriculation (Science)</p>
                         <span class="timeline-score">92.90 %</span>
                     </div>
                 </div>
@@ -507,57 +517,57 @@
 
             <div class="section">
                 <h2 class="section-title">PROJECTS</h2>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        Quran Connect (FYP)
-                        <span class="project-date">- Sept 2024</span>
+                        <span itemprop="name">Quran Connect (FYP)</span>
+                        <span class="project-date">- <span itemprop="dateCreated">Sept 2024</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Built an ontology-based system using Protégé, OWL, SPARQL, and Python for structured Islamic knowledge.
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        Ejil Enterprise Website
-                        <span class="project-date">- Oct 2024</span>
+                        <span itemprop="name">Ejil Enterprise Website</span>
+                        <span class="project-date">- <span itemprop="dateCreated">Oct 2024</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Developed a business website using React.js and Inline CSS for a US-based IT & telecom firm.
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        Cake Corner App
-                        <span class="project-date">- May 2024</span>
+                        <span itemprop="name">Cake Corner App</span>
+                        <span class="project-date">- <span itemprop="dateCreated">May 2024</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Designed and developed a bakery mobile app.
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        Multilingual Corpus Development
-                        <span class="project-date">- Aug 2024</span>
+                        <span itemprop="name">Multilingual Corpus Development</span>
+                        <span class="project-date">- <span itemprop="dateCreated">Aug 2024</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Transcribed, tagged, and analyzed language data using Appen tools, collaborating with Chinese researchers.
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        E-Commerce Architecture Analysis
-                        <span class="project-date">- Feb 2024</span>
+                        <span itemprop="name">E-Commerce Architecture Analysis</span>
+                        <span class="project-date">- <span itemprop="dateCreated">Feb 2024</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Studied detailed design and developed a prototype.
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
                     <div class="project-title">
-                        LMS Web System
-                        <span class="project-date">- Apr 2023</span>
+                        <span itemprop="name">LMS Web System</span>
+                        <span class="project-date">- <span itemprop="dateCreated">Apr 2023</span></span>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description" itemprop="description">
                         Developed with PHP, jQuery, JavaScript, CRUD.
                     </div>
                 </div>
@@ -568,28 +578,28 @@
                 <div class="skill-item">
                     <div class="skill-bullet">●</div>
                     <div>
-                        <span class="skill-name">Graphic Design & UI/UX</span>
+                        <span class="skill-name" itemprop="skill">Graphic Design & UI/UX</span>
                         <span class="skill-details"> (Illustrator, Photoshop, Canva)</span>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-bullet">●</div>
                     <div>
-                        <span class="skill-name">Web & App Development</span>
+                        <span class="skill-name" itemprop="skill">Web & App Development</span>
                         <span class="skill-details"> (React.js, XML, Java, PHP)</span>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-bullet">●</div>
                     <div>
-                        <span class="skill-name">Technology & Tools</span>
+                        <span class="skill-name" itemprop="skill">Technology & Tools</span>
                         <span class="skill-details"> (VS Code, Firebase, Protégé, Git)</span>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-bullet">●</div>
                     <div>
-                        <span class="skill-name">Ontology & Knowledge</span>
+                        <span class="skill-name" itemprop="skill">Ontology & Knowledge</span>
                         <span class="skill-details"> (Protégé & Ontology Modeling)</span>
                     </div>
                 </div>
